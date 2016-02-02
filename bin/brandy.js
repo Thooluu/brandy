@@ -313,6 +313,7 @@ Registry.prototype.keys = function () {
  *
  * @param {!String} key
  * @param {!Object} value
+ * @return {Registry}
  */
 Registry.prototype.set = function (key, value) {
   if (typeof key !== 'string') {
@@ -324,6 +325,8 @@ Registry.prototype.set = function (key, value) {
   }
 
   this._registry[key] = value;
+
+  return this;
 };
 
 module.exports = Registry;
