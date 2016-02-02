@@ -6,16 +6,6 @@ var gutil = require('gulp-util'),
 var config = {
 
   /**
-   * Built javascript files relative to bin path.
-   *
-   * @type {Object<String, String>}
-   */
-  artifacts: {
-    debug: 'brandy.js',
-    release: 'brandy.min.js'
-  },
-
-  /**
    * Entry point relative to source path.
    *
    * @type {String}

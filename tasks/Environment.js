@@ -66,28 +66,6 @@ Environment.prototype.getCurrent = function () {
 };
 
 /**
- * Returns a value from a kv object keyed by environment.
- *
- * @param  {!Object<String, *>} values
- * @param  {String=} target If a target is not provided, current is used.
- * @return {?*}
- */
-Environment.prototype.getEnvironmentValue = function (values, target) {
-  if (values === 'undefined') {
-    return null;
-  }
-
-  var environment = Environment.tryParseTarget(target) || this._current,
-      result = values.debug;
-
-  if (typeof values[environment] !== 'undefined') {
-    result = values[environment];
-  }
-
-  return result;
-};
-
-/**
  * Determines if this environment is a target.
  *
  * @param  {!String}  target
