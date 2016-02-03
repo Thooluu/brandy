@@ -54,6 +54,7 @@
     "requireSpacesInNamedFunctionExpression": {
         "beforeOpeningCurlyBrace": true
     },
+    "requirePaddingNewLinesBeforeExport": true,
     "requireSpacesInConditionalExpression": {
         "afterTest": true,
         "beforeConsequent": true,

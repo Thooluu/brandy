@@ -40,6 +40,7 @@ var config = {
    */
   paths: {
     bin: path.join(__dirname, './bin'),
+    examples: path.join(__dirname, './examples'),
     source: path.join(__dirname, './source'),
     tasks: path.join(__dirname, './tasks'),
     tests: path.join(__dirname, './tests'),
@@ -51,6 +52,7 @@ var config = {
      */
     project: function () {
       return [
+        this.examples,
         this.source,
         this.tasks,
         this.tests

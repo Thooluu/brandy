@@ -68,6 +68,19 @@ describe('Container', function () {
     });
   });
 
+  describe('instance', function () {
+    it('should explode on circular dependencies.', function () {
+      container.bind('Foo', Foo, ['Bar']);
+      container.bind('Bar', Bar, ['Foo']);
+
+      var throwMe = function () {
+        container.instance('Foo');
+      };
+
+      expect(throwMe).to.throw();
+    });
+  });
+
   describe('instance lifecycles', function () {
     it('should create new instances if registered with Transient.', function () {
       var factory = function () {

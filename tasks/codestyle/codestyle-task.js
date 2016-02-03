@@ -1,4 +1,5 @@
 var _ = require('lodash'),
+    jshint = require('gulp-jshint'),
     jscs = require('gulp-jscs'),
     path = require('path');
 
@@ -17,7 +18,8 @@ var register = function (gulp, config) {
   gulp.task('codestyle', function () {
     return gulp.src(paths)
       .pipe(jscs())
-      .pipe(jscs.reporter());
+      .pipe(jscs.reporter())
+      .pipe(jshint());
   });
 };
 
