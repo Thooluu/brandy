@@ -9,7 +9,7 @@ var path = require('path'),
  * @return {Stream}
  */
 var create = (name, minified) => {
-  var extension = minified ? '.js' : '.min.js',
+  var extension = minified ? '.min.js' : '.js',
       as = (name || 'bundle') + extension;
 
   return rename(as.toLowerCase());

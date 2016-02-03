@@ -1,12 +1,4 @@
 /**
- * Determines if object contains a property.
- *
- * @param {String} key
- * @return {Boolean}
- */
-var has = Object.prototype.hasOwnProperty;
-
-/**
  * Key value storage.
  */
 var Registry = function () {
@@ -33,13 +25,7 @@ Registry.prototype.get = function (key) {
     throw new Error('key must be a string.');
   }
 
-  var value = null;
-
-  if (has.call(this._registry, key)){
-    value = this._registry[key];
-  }
-
-  return value;
+  return this._registry[key] || null;
 };
 
 /**
