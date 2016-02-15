@@ -211,7 +211,7 @@ var Container = require('./container'),
 /**
  * Main module entry point.
  *
- * @return {!Container}
+ * @return {Container}
  */
 var factory = function () {
   var cache = Registry.create(),
@@ -306,9 +306,8 @@ Registry.prototype.keys = function () {
 /**
  * Sets a value to a key.
  *
- * @param {!String} key
- * @param {!Object} value
- * @return {Registry}
+ * @param {String} key
+ * @param {Object} value
  */
 Registry.prototype.set = function (key, value) {
   if (typeof key !== 'string') {
@@ -320,8 +319,6 @@ Registry.prototype.set = function (key, value) {
   }
 
   this._registry[key] = value;
-
-  return this;
 };
 
 module.exports = Registry;

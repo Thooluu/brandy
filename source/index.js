@@ -4,7 +4,7 @@ var Container = require('./container'),
 /**
  * Main module entry point.
  *
- * @return {!Container}
+ * @return {Container}
  */
 var factory = function () {
   var cache = Registry.create(),
