@@ -1,16 +1,16 @@
 # Brandy IoC
-Brandy is a small, no hassel, isomorphic IoC library with no external dependencies and no opinions.
+Brandy is a small, no hassle, isomorphic IoC library with no external dependencies and no opinions.
 
 ## Why brandy?
-There are many IoC solutions available for javascript ranging from complete libraries/framework from some all in one solutions like [bottlejs](https://www.npmjs.com/package/bottlejs), [wire](https://github.com/cujojs/wire), [angular-di](https://github.com/angular/di.js/) to dozens of 'lite', niche, or domain specific implementations. Brandy was designed with three considerations; simplicity, size, and power. Brandy is simple to install, configure, and use. The entire api contains only 3 methods. With this simplicty comes freedom. Brandy has no opinions on project or module structure so you are free too write code the way you want. Brandy is small. It has no external dependencies, when minimized and gzipped the entire library weighs ~1.4k. Brandy is powerful sporting professional features such as implementation and factory binding, lifecycle support, lazy resolution, and cycle detection.
+There are many IoC solutions available for javascript ranging from complete libraries/framework from some all-in-one solutions like [bottlejs](https://www.npmjs.com/package/bottlejs), [wire](https://github.com/cujojs/wire), [angular-di](https://github.com/angular/di.js/) to dozens of 'lite', niche, or domain specific implementations. Brandy was designed with three considerations; simplicity, size, and power. Brandy is simple to install, configure, and use. The entire api contains only 3 methods. With this simplicity comes freedom. Brandy has no opinions on project or module structure so you are free to write code the way you want. Brandy is small. It has no external dependencies, when minimized and gzipped the entire library weighs ~1.4k. Brandy is powerful sporting professional features such as implementation and factory binding, lifecycle support, lazy resolution, and cycle detection.
 
 ### Features
 * Both implementation and factory binding.
 * Constructor injection. Setter injection can be accomplished using factories.
 * Lifecycles. Register bindings as transitive or singletons.
 * Container registry can be swapped for custom implementations.
-* Lazy. Dependencies are resolved and cached as needed. Dont worry about order of registration.
-* Explicit. There is no magic. No function argument name reflections, no annotaions, no monkey patching properties.
+* Lazy. Dependencies are resolved and cached as needed. Don't worry about order of registration.
+* Explicit. There is no magic. No function argument name reflections, no annotations, no monkey patching properties.
 
 ## Installation
 ```bash
